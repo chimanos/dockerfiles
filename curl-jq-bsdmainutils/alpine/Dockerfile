@@ -7,8 +7,7 @@ FROM alpine:latest
 
 RUN apk update
 RUN apk upgrade
-RUN apk add --no-cache brotli brotli-dev libssh2 nghttp2-dev jq util-linux && \
-    rm -fr /var/cache/apk/*
+RUN apk add --no-cache brotli brotli-dev libssh2 nghttp2-dev jq util-linux && rm -fr /var/cache/apk/*
 
 ###############################################################
 # install curl built from builder
